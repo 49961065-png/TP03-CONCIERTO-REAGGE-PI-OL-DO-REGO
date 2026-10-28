@@ -143,6 +143,20 @@ body {
     animation-fill-mode: both;
 }
 
+@keyframes pulseAnimation {
+0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.hoverable:hover {
+    background-color: #deffe6;
+    animation-name: pulseAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
 
 .event-section {
     color: white;
